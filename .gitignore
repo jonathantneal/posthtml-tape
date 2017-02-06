@@ -1,0 +1,10 @@
+node_modules
+
+.*
+!.editorconfig
+!.config.js
+!.rollup.js
+!.travis.js
+*.log*
+
+index.es5.js*

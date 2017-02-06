@@ -1,0 +1,50 @@
+{
+  "name": "posthtml-tape",
+  "version": "1.0.0",
+  "description": "Quickly test PostHTML plugins",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/posthtml-tape",
+  "homepage": "https://github.com/jonathantneal/posthtml-tape#readme",
+  "bugs": "https://github.com/jonathantneal/posthtml-tape/issues",
+  "main": "index.js",
+  "bin": {
+    "posthtml-tape": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "clean": "git clean -X -d -f",
+    "lint": "npm run lint:ec && npm run lint:js",
+    "lint:ec": "echint",
+    "lint:js": "eslint index.js src/*.js --cache --ignore-pattern .gitignore",
+    "prepublish": "npm test",
+    "tape": "node index --plugin=test.js",
+    "test": "npm run lint && npm run tape"
+  },
+  "engines": {
+    "node": ">=6.5.0"
+  },
+  "devDependencies": {
+    "echint": "^4.0.1",
+    "echint-config-dev": "1.0.0",
+    "eslint": "^3.15.0",
+    "eslint-config-dev": "1.0.0"
+  },
+  "echint": {
+    "extends": "dev"
+  },
+  "eslintConfig": {
+    "extends": "dev"
+  },
+  "keywords": [
+    "posthtml",
+    "html",
+    "posthtml-plugin",
+    "testing",
+    "tests",
+    "tools",
+    "tape"
+  ]
+}
