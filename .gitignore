@@ -1,10 +1,9 @@
 node_modules
 
 .*
-!.editorconfig
-!.config.js
-!.rollup.js
-!.travis.js
+!.gitignore
+!.tape.js
+!.travis.yml
 *.log*
 
-index.es5.js*
+*.result.html

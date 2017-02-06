@@ -11,7 +11,7 @@
 1. Install this dependency to your project:
 
    ```sh
-   npm install jonathantneal/posthtml-tape
+   npm install --save-dev posthtml-tape
    ```
 
 2. Add the `posthtml-tape` task to your `package.json`:
